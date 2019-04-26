@@ -1,4 +1,5 @@
+language: generic
 script:
-  - install -g gatsby-cli
+  - npm install -g gatsby-cli
   - npm install
   - npm run deploy
