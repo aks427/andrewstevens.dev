@@ -1,3 +1,1 @@
-module.exports = {
-  pathPrefix: "//andrewstevens.me"
-};
+module.exports = {};
