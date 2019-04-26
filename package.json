@@ -1,15 +1,15 @@
 {
   "name": "andrewstevens.me",
-  "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Personal website for Andrew Stevens",
   "version": "0.1.0",
+  "homepage": "https://andrewstevens.me",
   "license": "MIT",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
     "deploy": "gatsby build && gh-pages -d public"
   },
   "dependencies": {
@@ -22,6 +22,9 @@
     "url": "https://github.com/aks427/andrewstevens.me"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.12.4",
+    "gh-pages": "^2.0.1",
+    "prettier": "^1.17.0"
   }
 }

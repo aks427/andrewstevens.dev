@@ -1,5 +1,15 @@
-language: generic
+language: node_js
+
+os:
+  - linux
+  - osx
+
+node_js:
+  - "node"
+  - "lts/*"
+  - "7"
+  - "8"
+
 script:
-  - npm install -g gatsby-cli
   - npm install
-  - npm run deploy
+  - npm run lint
