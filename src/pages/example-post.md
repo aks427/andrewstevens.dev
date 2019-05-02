@@ -8,8 +8,10 @@ This is an example post
 test test!
 
 This is a code sample
-```
-test code
+```jsx
+<div>
+  test
+</div>
 ```
 
 asdf
