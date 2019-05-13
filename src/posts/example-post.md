@@ -11,8 +11,19 @@ here is some `inline code`
 
 This is a code sample
 
-```jsx
-<div>test</div>
+```javascript{numberLines: true}
+function () {
+  return <div>test</div>;
+}
+```
+
+this is a c# snippet
+
+```csharp
+public string test()
+{
+  return "test";
+}
 ```
 
 asdf

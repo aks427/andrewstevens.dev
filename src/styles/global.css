@@ -1,7 +1,7 @@
 html {
 }
 
-code {
+/* code {
   background: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
 }
@@ -11,4 +11,6 @@ pre code {
   padding: 1rem;
   font-size: 0.85rem;
   line-height: 1.42;
-}
+} */
+
+@import url("prism.css");
