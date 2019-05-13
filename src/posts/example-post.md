@@ -7,11 +7,12 @@ This is an example post
 
 test test!
 
+here is some `inline code`
+
 This is a code sample
+
 ```jsx
-<div>
-  test
-</div>
+<div>test</div>
 ```
 
 asdf
