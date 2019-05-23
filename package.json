@@ -1,8 +1,8 @@
 {
-  "name": "andrewstevens.me",
+  "name": "andrewstevens.dev",
   "description": "Personal website for Andrew Stevens",
   "version": "0.1.0",
-  "homepage": "https://andrewstevens.me",
+  "homepage": "https://andrewstevens.dev",
   "license": "MIT",
   "scripts": {
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
@@ -31,7 +31,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/aks427/andrewstevens.me"
+    "url": "https://github.com/aks427/andrewstevens.dev"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
