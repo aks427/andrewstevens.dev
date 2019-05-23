@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{137:function(n,e,t){"use strict";t.r(e);var a=t(0),o=t.n(a);e.default=function(){return o.a.createElement("div",null,"another page")}}}]);
-//# sourceMappingURL=component---src-pages-blah-js-141a3e6b6427d56212c2.js.map
