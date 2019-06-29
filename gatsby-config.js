@@ -49,6 +49,13 @@ module.exports = {
               // code used in markdown i.e. single backtick code like `this`.
               noInlineHighlight: false
             }
+          },
+          "gatsby-remark-smartypants",
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank"
+            }
           }
         ]
       }
