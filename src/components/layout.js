@@ -2,6 +2,7 @@ import React from "react";
 import { css } from "@emotion/core";
 import { useStaticQuery, Link, graphql } from "gatsby";
 import { Helmet } from "react-helmet";
+import { FaGithub, FaTwitter, FaStackOverflow, FaLinkedin } from "react-icons/fa";
 
 import { rhythm } from "../utils/typography";
 
@@ -53,6 +54,20 @@ export default ({ children }) => {
         About
       </Link>
       {children}
+      <div className="social-links">
+        <a href="https://github.com/aks427" target="_blank" title="GitHub">
+          <FaGithub />
+        </a>
+        <a href="https://twitter.com/aks427" target="_blank" title="Twitter">
+          <FaTwitter />
+        </a>
+        <a href="https://stackoverflow.com/users/505108/andrew-stevens" target="_blank" title="Stack Overflow">
+          <FaStackOverflow />
+        </a>
+        <a href="https://www.linkedin.com/in/aks427/" target="_blank" title="LinkedIn">
+          <FaLinkedin />
+        </a>
+      </div>
     </div>
   );
 };

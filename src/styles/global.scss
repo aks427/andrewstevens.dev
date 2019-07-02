@@ -13,5 +13,21 @@ pre code {
   line-height: 1.42;
 } */
 
+.social-links {
+  margin-top: 64px;
+
+  a {
+    margin-right: 12px;
+
+    svg {
+      color: #aaa;
+    }
+
+    &:hover svg {
+      color: #666;
+    }
+  }
+}
+
 @import url("prism.css");
 @import url("timeline.scss");
