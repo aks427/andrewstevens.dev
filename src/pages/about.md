@@ -161,7 +161,7 @@ Here is a timeline of my work history and when I first used different technologi
   <tr>
     <td></td>
     <td></td>
-    <td>ExtJS, ASP.NET Web MVC, NHibernate, TeamCity, Microsoft Azure, Azure Cloud Services, Sql Azure</td>
+    <td>ExtJS, RequireJS, ASP.NET Web MVC, NHibernate, TeamCity, Microsoft Azure, Azure Cloud Services, Sql Azure</td>
   </tr>
   <tr>
     <th>2010</td>
