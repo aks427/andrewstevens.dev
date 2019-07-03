@@ -231,7 +231,7 @@ Here is a timeline of my work history and when I first used different technologi
   <tr>
     <td>Spring</td>
     <td></td>
-    <td>Rest Api, SASS</td>
+    <td>Rest Api, Swagger, SASS</td>
   </tr>
   <tr>
     <td>Summer</td>
