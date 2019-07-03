@@ -3,7 +3,7 @@ title: "About"
 date: "2019-05-28"
 ---
 
-This website is built using Gatsby, React and hosted on [GitHub](https://github.com/aks427/andrewstevens.dev) using GitHub Pages.
+This website is built using Gatsby and React, and is hosted on [GitHub](https://github.com/aks427/andrewstevens.dev) using GitHub Pages.
 
 ```csharp
 public string About()
