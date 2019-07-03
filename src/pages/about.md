@@ -111,11 +111,6 @@ Here is a timeline of my work history and when I first used different technologi
   <tr>
     <td></td>
     <td></td>
-    <td>JQuery, MySql</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
     <td>Wrote popular Profile Fields and Calendar mods to WebWizForums</td>
   </tr>
   <tr>
@@ -126,7 +121,22 @@ Here is a timeline of my work history and when I first used different technologi
   <tr>
     <td></td>
     <td></td>
+    <td>Prototype, MySql</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
     <td>Visual Studio, VB.NET</td>
+  </tr>
+ <tr>
+    <th>2007</td>
+    <th></td>
+    <th></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>JQuery</td>
   </tr>
   <tr>
     <th>2008</td>
