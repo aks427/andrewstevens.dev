@@ -251,7 +251,7 @@ Here is a timeline of my work history and when I first used different technologi
   <tr>
     <td>Spring</td>
     <td></td>
-    <td>Azure App Services</td>
+    <td>Azure App Services, fastlane</td>
   </tr>
   <tr>
     <td></td>
