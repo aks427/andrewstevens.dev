@@ -68,6 +68,14 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`
       }
     },
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-40418109-1",
+        head: true,
+        cookieDomain: "andrewstevens.dev"
+      }
+    }
   ]
 };
