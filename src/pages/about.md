@@ -17,6 +17,7 @@ public string About()
 Here are a few of the technologies that I like to use:
 
 - C#
+- .NET Core
 - JavaScript
 - React
 - Xamarin
