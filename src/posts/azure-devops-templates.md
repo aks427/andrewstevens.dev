@@ -3,7 +3,7 @@ title: "Azure DevOps Templates"
 date: "2019-12-28"
 ---
 
-I recently migraded a CI/CD pipeline from TeamCity and Octopus Deploy to Azure DevOps (AzDo) . We have a mostly micro-services architecture where almost all of the services were in one GitHub repository. I say "mostly" because we're near the finish line of using the [strangler pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/strangler) to gradually migrate away from the previous monolithic architecture.
+I recently migrated a CI/CD pipeline from TeamCity and Octopus Deploy to Azure DevOps (AzDo) . We have a mostly micro-services architecture where almost all of the services were in one GitHub repository. I say "mostly" because we're near the finish line of using the [strangler pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/strangler) to gradually migrate away from the previous monolithic architecture.
 
 My goals were:
 
