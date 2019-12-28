@@ -267,7 +267,7 @@ Here is a timeline of my work history and when I first used different technologi
   <tr>
     <td>Spring</td>
     <td></td>
-    <td>App platform, .NET App Domains, MongoDB</td>
+    <td><a href="/projects/app-platform">App platform</a>, .NET App Domains, MongoDB</td>
   </tr>
   <tr>
     <td></td>
@@ -277,7 +277,7 @@ Here is a timeline of my work history and when I first used different technologi
   <tr>
     <td>Summer</td>
     <td></td>
-    <td>UWP, Windows App, Cross Platform Mobile Development</td>
+    <td>UWP, <a href="/projects/windows-app">Windows App</a>, Cross Platform Mobile Development</td>
   </tr>
   <tr>
     <th>2018</td>
@@ -287,7 +287,7 @@ Here is a timeline of my work history and when I first used different technologi
   <tr>
     <td>Summer</td>
     <td></td>
-    <td>Rewrote and migrated ExtJs code to React</td>
+    <td><a href="/projects/extjs-react-migration">Rewrote and migrated ExtJs code to React</a></td>
   </tr>
   <tr>
     <th>2019</td>
@@ -297,11 +297,21 @@ Here is a timeline of my work history and when I first used different technologi
   <tr>
     <td>March</td>
     <td></td>
-    <td>.NET Core</td>
+    <td>.NET Core, <a href="/posts/nuget-shared-pcl">.NET Standard</a></td>
+  </tr>
+  <tr>
+    <td>April</td>
+    <td></td>
+    <td>Gatsby, Created this website</td>
   </tr>
   <tr>
     <td>May</td>
     <td></td>
     <td>Azure DevOps</td>
+  </tr>
+  <tr>
+    <td>December</td>
+    <td></td>
+    <td>Docker, Kubernetes</td>
   </tr>
 </table>
