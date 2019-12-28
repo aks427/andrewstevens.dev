@@ -3,12 +3,36 @@ title: "About"
 date: "2019-05-28"
 ---
 
-This website is built using Gatsby and React, and is hosted on [GitHub](https://github.com/aks427/andrewstevens.dev) using GitHub Pages.
+This website is built using Gatsby and React, hosted on [GitHub](https://github.com/aks427/andrewstevens.dev) using GitHub Pages, and built and deployed using [Travis CI](https://travis-ci.org/aks427/andrewstevens.dev).
 
 ```csharp
-public string About()
+public class About
 {
-  return "Hello World";
+  public string Name { get; set; }
+  public string[] Languages { get; set; }
+  public string[] Frameworks { get; set; }
+  public string[] Editors { get; set; }
+
+  public About()
+  {
+    Name = "Andrew Stevens";
+    Languages = new string[]
+    {
+      "C#",
+      "JavaScript"
+    };
+    Frameworks = new string[]
+    {
+      ".NET Core",
+      "React",
+      "Xamarin"
+    };
+    Editors = new string[]
+    {
+      "Visual Studio",
+      "Visual Studio Code"
+    };
+  }
 }
 ```
 
