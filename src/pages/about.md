@@ -339,3 +339,5 @@ Here is a timeline of my work history and when I first used different technologi
     <td>Docker, Kubernetes</td>
   </tr>
 </table>
+
+[Books I've recently read](/books)

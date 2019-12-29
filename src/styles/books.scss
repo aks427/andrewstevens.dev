@@ -1,0 +1,14 @@
+.books {
+  .gr_grid_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .gr_grid_book_container {
+    width: 98px;
+    height: 160px;
+    padding: 0px 4px;
+  }
+}
