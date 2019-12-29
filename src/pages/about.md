@@ -326,7 +326,7 @@ Here is a timeline of my work history and when I first used different technologi
   <tr>
     <td>April</td>
     <td></td>
-    <td>Gatsby, Created this website</td>
+    <td>Gatsby, GraphQL, Created this website</td>
   </tr>
   <tr>
     <td>May</td>
