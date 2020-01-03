@@ -47,6 +47,7 @@ Here are a few of the technologies that I like to use:
 - Xamarin
 - Azure
 - GitHub
+- Azure DevOps
 
 ---
 
@@ -337,6 +338,16 @@ Here is a timeline of my work history and when I first used different technologi
     <td>December</td>
     <td></td>
     <td>Docker, Kubernetes</td>
+  </tr>
+  <tr>
+    <th>2020</td>
+    <th></td>
+    <th></td>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td></td>
+    <td>Helm</td>
   </tr>
 </table>
 
