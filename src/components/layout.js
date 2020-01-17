@@ -42,7 +42,7 @@ export default ({ children }) => {
             font-style: normal;
           `}
         >
-          {data.site.siteMetadata.title}
+          Andrew's Dev Site
         </h3>
       </Link>
       <Link
