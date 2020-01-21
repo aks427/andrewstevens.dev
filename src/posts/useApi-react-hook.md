@@ -53,7 +53,7 @@ const url = "some url";
 const [loading, result] = useApi(url);
 ```
 
-If `url` changes across different renders, it will trigger additional api calls, since `url` a dependency to the `useEffect` hook. The issue our code currently has is that multiple changes to the `url` variable in quick succession won't guarantee that the latest call will be the result state.
+If `url` changes across different renders, it will trigger additional api calls, since `url` is a dependency to the `useEffect` hook. The issue our code currently has is that multiple changes to the `url` variable in quick succession won't guarantee that the latest call will be the result state.
 
 What we need to do is return a cleanup function from `useEffect` that marks the current request as stale.
 
