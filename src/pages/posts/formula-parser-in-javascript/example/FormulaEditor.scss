@@ -1,0 +1,67 @@
+.formula-editor {
+  position: relative;
+
+  .formula-editor-textarea {
+    resize: none;
+    width: 100%;
+    color: transparent;
+    caret-color: #000;
+    border: 1px solid #333;
+    padding: 4px;
+    font-family: monospace;
+    letter-spacing: normal;
+    font-size: 14px;
+
+    &::selection {
+      color: transparent;
+      background: #eee;
+    }
+  }
+
+  .formula-editor-formatted {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 8px;
+    border: 1px solid transparent;
+    padding: 4px;
+    font-family: monospace;
+    letter-spacing: normal;
+    font-size: 14px;
+    white-space: pre-wrap;
+    pointer-events: none;
+    overflow-y: auto;
+
+    .string,
+    .quote {
+      color: #a11;
+    }
+
+    .number {
+      color: #164;
+    }
+
+    .function-name {
+      color: #07a;
+    }
+
+    .reference-name {
+      color: #05a;
+    }
+
+    .operator,
+    .comma {
+      color: #838c90;
+    }
+
+    .bracket {
+      color: #997;
+    }
+
+    .error,
+    .unfinished-formula {
+      color: red;
+    }
+  }
+}

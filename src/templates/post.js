@@ -6,6 +6,7 @@ import "../styles/post.scss";
 
 export default ({ data }) => {
   const post = data.markdownRemark;
+  console.log(data);
   return (
     <Layout>
       <Helmet>
