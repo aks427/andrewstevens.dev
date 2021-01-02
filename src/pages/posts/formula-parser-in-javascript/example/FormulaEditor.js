@@ -1,5 +1,5 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { GetTokensForFormula } from './Lexing';
+import { GetTokensForFormula } from './Lexer';
 import { ValidateTokens } from './Validation';
 import './FormulaEditor.scss';
 
