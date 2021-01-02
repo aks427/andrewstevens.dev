@@ -1,14 +1,15 @@
+import { HasFunction } from './Functions';
+import { tokenIsValue } from './SyntaxTokenizer';
+
 export function ValidateTokens(tokens) {
   const errors = [];
   const unclosedTokens = [];
-
   let previousToken = null;
-  for (let i = 0; i < tokens.length; i++) {
-    const token = tokens[i];
+  let functionLevel = 0;
+  const nonWhitespaceTokens = tokens.filter(token => token.type !== 'whitespace');
 
-    if (token.type === 'whitespace') {
-      continue;
-    }
+  for (let i = 0; i < nonWhitespaceTokens.length; i++) {
+    const token = nonWhitespaceTokens[i];
 
     const previousTokenType = previousToken ? previousToken.type : null;
 
@@ -16,17 +17,33 @@ export function ValidateTokens(tokens) {
       if (!tokenIsValue(previousToken)) {
         errors.push({ token, error: `Unexpected operator '${token.value}'` });
       }
-      if (i === tokens.length - 1) {
+      if (i === nonWhitespaceTokens.length - 1) {
         errors.push({ token, error: `Value expected after operator '${token.value}'` });
       }
     }
 
-    if (token.type === 'function-name' && !checkIfValueIsAllowed(previousToken)) {
-      errors.push({ token, error: 'An operator is required before the function' });
+    if (token.type === 'number') {
+      if (!checkIfValueIsAllowed(previousToken)) {
+        errors.push({ token, error: 'An operator is required before the number' });
+      }
+    }
+
+    if (token.type === 'function-name') {
+      if (!checkIfValueIsAllowed(previousToken)) {
+        errors.push({ token, error: 'An operator is required before the function' });
+      }
+
+      if (!HasFunction(token.value)) {
+        errors.push({ token, error: `'${token.value}' is not a valid function` });
+      }
     }
 
     if (token.type === 'start quote') {
       unclosedTokens.push({ text: '"', type: 'reference', token });
+
+      if (!checkIfValueIsAllowed(previousToken)) {
+        errors.push({ token, error: 'An operator is required before the string' });
+      }
     }
 
     if (token.type === 'end quote') {
@@ -36,7 +53,7 @@ export function ValidateTokens(tokens) {
     }
 
     if (token.type === 'comma') {
-      if (unclosedTokens.length === 0 || unclosedTokens[unclosedTokens.length - 1].text !== '(') {
+      if (!functionLevel > 0) {
         errors.push({ token, error: `Unexpected ','` });
       }
       if (!tokenIsValue(previousToken)) {
@@ -48,6 +65,10 @@ export function ValidateTokens(tokens) {
       if (token.value === '(') {
         unclosedTokens.push({ text: '(', type: previousTokenType === 'function-name' ? 'function' : 'group', token });
 
+        if (previousTokenType === 'function-name') {
+          functionLevel += 1;
+        }
+
         if (previousTokenType !== 'function-name' && !checkIfValueIsAllowed(previousToken)) {
           errors.push({ token, error: 'An operator is required before the parenthesis' });
         }
@@ -55,6 +76,10 @@ export function ValidateTokens(tokens) {
 
       if (token.value === ')') {
         if (unclosedTokens.length > 0 && unclosedTokens[unclosedTokens.length - 1].text === '(') {
+          if (unclosedTokens[unclosedTokens.length - 1].type === 'function') {
+            functionLevel--;
+          }
+
           unclosedTokens.pop();
 
           if (!tokenIsValue(previousToken) && !(previousTokenType === 'start-parenthesis' && unclosedTokens[unclosedTokens.length - 1].type === 'function')) {
@@ -83,14 +108,6 @@ export function ValidateTokens(tokens) {
           errors.push({ token, error: `Unexpected ']'` });
         }
       }
-
-      if (token.type === 'function-name') {
-        // TODO verify it is valid
-      }
-
-      if (token.type === 'reference-name') {
-        // TODO verify it is valid
-      }
     }
 
     previousToken = token;
@@ -107,22 +124,6 @@ export function ValidateTokens(tokens) {
   }
 
   return errors;
-}
-
-function tokenIsValue(token) {
-  if (!token) {
-    return false;
-  }
-
-  if (token.type === 'number' || token.type == 'end quote') {
-    return true;
-  }
-
-  if (token.type === 'bracket' && (token.value === ')' || token.value === ']')) {
-    return true;
-  }
-
-  return false;
 }
 
 function checkIfValueIsAllowed(previousToken) {

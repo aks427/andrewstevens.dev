@@ -1,12 +1,11 @@
-import React from "react";
-import { graphql } from "gatsby";
-import { Helmet } from "react-helmet";
-import Layout from "../components/layout";
-import "../styles/post.scss";
+import React from 'react';
+import { graphql } from 'gatsby';
+import { Helmet } from 'react-helmet';
+import Layout from '../components/layout';
+import '../styles/post.scss';
 
 export default ({ data }) => {
   const post = data.markdownRemark;
-  console.log(data);
   return (
     <Layout>
       <Helmet>

@@ -1,9 +1,9 @@
-export function SyntaxTokenizer(stream, tokens) {
+export function SyntaxTokenizer(stream) {
   const peek = stream.peek();
-  const previousToken = getPreviousToken(tokens);
+  const previousToken = stream.getPreviousToken();
   const previousTokenType = previousToken ? previousToken.type : null;
 
-  // handle doubled quotes
+  // handle double quotes
   if (peek === '"') {
     stream.next();
     if (previousTokenType === 'string' || previousTokenType === 'start quote') {
@@ -14,18 +14,18 @@ export function SyntaxTokenizer(stream, tokens) {
 
   // handle strings inside of quotes
   if (peek !== '"' && previousTokenType === 'start quote' && previousToken.value === '"') {
-    if (stream.match(/^[^\"]+(?=\")/, true)) {
+    if (stream.match(/^[^"]+(?=")/, true)) {
       return 'string';
     } else {
       // didn't find end quote so select all the way to the end
-      stream.match(/^[^\"]+/, true);
+      stream.match(/^[^"]+/, true);
       return 'string';
     }
   }
 
   // handle numbers
   if (stream.match(/^[-]?\d*\.?\d+/, false)) {
-    if (peek === '-' && previousTokenType !== 'operator') {
+    if (peek === '-' && previousTokenType !== 'operator' && tokenIsValue(previousToken)) {
       // if this number is starting with a minus and there is no previous operator, then we need to be treating this as an operator instead
       stream.next();
       return 'operator';
@@ -35,7 +35,7 @@ export function SyntaxTokenizer(stream, tokens) {
   }
 
   // handle operators
-  if (['&', '*', '-', '+', '=', '/'].indexOf(peek) > -1) {
+  if (['&', '*', '-', '+', '/'].indexOf(peek) > -1) {
     stream.next();
     return 'operator';
   }
@@ -46,12 +46,8 @@ export function SyntaxTokenizer(stream, tokens) {
   }
 
   // handle functions
-  if (stream.match(/^[a-zA-Z_]\w*/, true)) {
-    if (stream.peek() === '(') {
-      return 'function-name';
-    }
-    // TODO do I want this?
-    return 'unfinished-formula';
+  if (stream.match(/^[a-zA-Z_]\w*(?=\()/, true)) {
+    return 'function-name';
   }
 
   // handle brackets
@@ -76,11 +72,15 @@ export function SyntaxTokenizer(stream, tokens) {
   return 'error';
 }
 
-function getPreviousToken(tokens) {
-  for (let i = tokens.length - 1; i >= 0; i--) {
-    if (tokens[i].type !== 'whitespace') {
-      return tokens[i];
-    }
+export function tokenIsValue(token) {
+  if (!token) {
+    return false;
   }
-  return null;
+  if (token.type === 'number' || token.type === 'end quote') {
+    return true;
+  }
+  if (token.type === 'bracket' && (token.value === ')' || token.value === ']')) {
+    return true;
+  }
+  return false;
 }

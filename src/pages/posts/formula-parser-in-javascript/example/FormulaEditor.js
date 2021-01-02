@@ -1,10 +1,11 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { GetTokensForFormula } from './Lexer';
+import { Lexer } from './Lexer';
+import { SyntaxTokenizer } from './SyntaxTokenizer';
 import { ValidateTokens } from './Validation';
 import './FormulaEditor.scss';
 
 export function FormulaEditor(props) {
-  const { value, onChange, onErrorsChanged } = props;
+  const { value, onChange, onErrorsChanged, onTokensChanged } = props;
   const inputRef = useRef();
   const formattedRef = useRef();
   const [textareaHeight, setTextareaHeight] = useState(30);
@@ -12,36 +13,40 @@ export function FormulaEditor(props) {
   const [errors, setErrors] = useState([]);
 
   useEffect(() => {
-    const t = GetTokensForFormula(value);
+    const t = Lexer(value, SyntaxTokenizer);
     const e = ValidateTokens(t);
     setTokens(t);
     setErrors(e);
+    if (onTokensChanged) {
+      onTokensChanged(t);
+    }
     if (onErrorsChanged) {
       onErrorsChanged(e);
     }
-  }, [value, GetTokensForFormula, ValidateTokens]);
-
-  const onInputScroll = () => {
-    formattedRef.current.scrollTop = inputRef.current.scrollTop;
-    formattedRef.current.scrollLeft = inputRef.current.scrollLeft;
-  };
+  }, [value, onTokensChanged, onErrorsChanged]);
 
   useLayoutEffect(() => {
-    inputRef.current.addEventListener('scroll', onInputScroll);
-    return () => {
-      inputRef.current.removeEventListener('scroll', onInputScroll);
+    const inputRefCurrent = inputRef.current;
+    const onInputScroll = () => {
+      formattedRef.current.scrollTop = inputRef.current.scrollTop;
+      formattedRef.current.scrollLeft = inputRef.current.scrollLeft;
     };
-  }, [inputRef, onInputScroll]);
 
-  const updateInputHeight = () => {
-    inputRef.current.style.height = 'auto';
-    inputRef.current.style.height = `${Math.min(inputRef.current.scrollHeight + 2, 200)}px`;
-    setTextareaHeight(inputRef.current.scrollHeight + 2); // add 1px for top and bottom borders
-  };
+    inputRefCurrent.addEventListener('scroll', onInputScroll);
+    return () => {
+      inputRefCurrent.removeEventListener('scroll', onInputScroll);
+    };
+  }, [inputRef]);
 
   useLayoutEffect(() => {
+    const updateInputHeight = () => {
+      inputRef.current.style.height = 'auto';
+      inputRef.current.style.height = `${Math.min(inputRef.current.scrollHeight + 2, 200)}px`;
+      setTextareaHeight(inputRef.current.scrollHeight + 2); // add 1px for top and bottom borders
+    };
+
     updateInputHeight();
-  }, [updateInputHeight, value]);
+  }, [value]);
 
   const textareaOnChange = e => {
     let v = e.target.value;

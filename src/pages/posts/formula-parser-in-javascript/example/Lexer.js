@@ -1,7 +1,6 @@
-import { SyntaxTokenizer } from './SyntaxTokenizer';
-
-export function GetTokensForFormula(formula) {
+export function Lexer(formula, syntaxTokenizer) {
   let position = 0;
+  const tokens = [];
 
   const isEnd = () => {
     return position >= formula.length;
@@ -18,31 +17,35 @@ export function GetTokensForFormula(formula) {
     if (!match || match.length > 1) {
       return null;
     }
-    if (consume !== false) {
+    if (consume) {
       position += match[0].length;
     }
-    return match[0];
+    return match[0] || null;
   };
   const next = () => {
     position += 1;
     return peek();
   };
-
-  const tokens = [];
+  const getPreviousToken = () => {
+    for (let i = tokens.length - 1; i >= 0; i--) {
+      if (tokens[i].type !== 'whitespace') {
+        return tokens[i];
+      }
+    }
+    return null;
+  };
 
   while (!isEnd()) {
     const startingPosition = position;
-    const tokenType = SyntaxTokenizer({ peek, match, next, isEnd }, tokens);
+    const tokenType = syntaxTokenizer({ peek, match, next, isEnd, getPreviousToken });
 
     if (startingPosition === position) {
-      throw 'Tokenizer did not move forward';
+      throw new Error('Tokenizer did not move forward');
     }
 
     const token = {
       value: formula.substring(startingPosition, position),
       type: tokenType,
-      start: startingPosition,
-      end: position - 1,
     };
 
     tokens.push(token);

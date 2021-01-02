@@ -3,4 +3,27 @@
     color: red;
     font-size: 14px;
   }
+
+  h3 {
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .input-value {
+    margin-top: 8px;
+
+    div {
+      font-size: 14px;
+    }
+    input {
+      font-size: 14px;
+      width: 60%;
+    }
+  }
+
+  .result {
+    margin-top: 8px;
+    font-size: 16px;
+  }
 }
