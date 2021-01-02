@@ -11,7 +11,7 @@ In this post I want to show how to add simple formula functionality to a JavaScr
 > There are existing open source libraries that are probably better to use in production, but this post will hopefully give a general idea how things work.
 > I recently used [CodeMirror](https://codemirror.net/) (with a custom mode) for a formula editor to use with an existing in-house calculation engine. I based some of the Lexer concepts on CodeMirror.
 
-Here is a [Live Example](/posts/formula-parser-in-javascript/example) of it all working end to end. You can also try it out and follow along on [CodeSandbox](https://codesandbox.io/s/clever-swartz-bxin6)
+Here is a [Live Example](/posts/formula-parser-in-javascript/example) of it all working end to end. You can also try it out and follow along on [CodeSandbox](https://codesandbox.io/s/simple-formula-parser-bxin6)
 
 #### We're going to do the following steps:
 
@@ -978,5 +978,5 @@ export default () => {
 ---
 
 - Here is a [Live Example](/posts/formula-parser-in-javascript/example) of it all working end to end
-- Try it out on [CodeSandbox](https://codesandbox.io/s/clever-swartz-bxin6)
+- Try it out on [CodeSandbox](https://codesandbox.io/s/simple-formula-parser-bxin6)
 - [View the example code on GitHub](https://github.com/aks427/andrewstevens.dev/tree/master/src/pages/posts/formula-parser-in-javascript/example)
