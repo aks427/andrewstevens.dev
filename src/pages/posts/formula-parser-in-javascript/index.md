@@ -932,7 +932,7 @@ export function GetReferencesFromTokens(tokens) {
 
 We can now update our code editor to run the formulas and let the user set the values for any references that are in the formula.
 
-I'm using a custom hook named [useForm](https://github.com/aks427/andrewstevens.dev/tree/master/src/pages/posts/formula-parser-in-javascript/example/useForm.js) that I often use for easily populating a key value pair object.
+I'm using a custom hook named [useForm](https://github.com/aks427/andrewstevens.dev/blob/master/src/examples/formula-parser-in-javascript/useForm.js) that I often use for easily populating a key value pair object.
 
 ```javascript
 import React, { useState } from 'react';
