@@ -25,7 +25,7 @@ Here is a [Live Example](/posts/formula-parser-in-javascript/example) of it all 
 
 ### 1. Formula Syntax
 
-We're going to base our syntax on a typical spreadsheet formula, which is one the most well known formula syntaxes.
+We're going to base our syntax on a typical spreadsheet formula, which is one of the most well known formula syntaxes.
 
 #### Our syntax will support the following:
 
