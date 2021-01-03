@@ -302,7 +302,7 @@ export function tokenIsValue(token) {
 
 ### 3. Validation
 
-To validate our tokens we're going to iterate each token and do some checks on if it is valid. Almost all of the checks will involve checking what the previous token is. For our syntax, there are conceptually `value` types and `operation` types. Our syntax requires that the value and operation types alternate and aren't ever next to each other.
+To validate our tokens we're going to iterate each token and do some checks on if it is valid. Almost all of the checks will involve checking what the previous token is. For our syntax, there are conceptually `value` types and `operator` types. Our syntax requires that the value and operator types alternate and aren't ever next to each other.
 
 We also have to keep track of opening and closing brackets and quotes to make sure there are corresponding opening and closing ones. We keep track of that in the `unclosedTokens` array.
 
