@@ -161,7 +161,7 @@ export function Lexer(formula, syntaxTokenizer) {
 
 The SyntaxTokenizer is the part that implements our actual syntax. It is called repeatedly until the end of the string is reached. It can categorize one or more characters as a token.
 
-The token type is definied by the return value. The number of characters that match is defined by how far the position was moved forward. The position is moved forward by using the `next()` method or by passing in `true` as the second parameter of the `match()` method.
+The token type is defined by the return value. The number of characters that match is defined by how far the position was moved forward. The position is moved forward by using the `next()` method or by passing in `true` as the second parameter of the `match()` method.
 
 To keep things simple for this code snippet, we're going to start by only supporting numbers, operators and whitespace.
 
