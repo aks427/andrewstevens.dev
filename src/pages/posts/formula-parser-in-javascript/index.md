@@ -979,4 +979,3 @@ export default () => {
 
 - Here is a [Live Example](/posts/formula-parser-in-javascript/example) of it all working end to end
 - Try it out on [CodeSandbox](https://codesandbox.io/s/simple-formula-parser-bxin6)
-- [View the example code on GitHub](https://github.com/aks427/andrewstevens.dev/tree/master/src/pages/posts/formula-parser-in-javascript/example)

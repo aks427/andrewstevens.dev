@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import Layout from '../../../../components/layout';
-import { FormulaEditor } from './FormulaEditor';
+import { FormulaEditor } from '../../../../examples/formula-parser-in-javascript/FormulaEditor';
+import { EvaluateTokens, GetReferencesFromTokens } from '../../../../examples/formula-parser-in-javascript/Evaluator';
+import { useForm } from '../../../../examples/formula-parser-in-javascript/useForm';
 import './Example.scss';
-import { EvaluateTokens, GetReferencesFromTokens } from './Evaluator';
-import { useForm } from './useForm';
 
 export default () => {
   const [formula, setFormula] = useState(`"Hello " & [First Name] & "! " & Round(1.2 + [Some Number])`);
