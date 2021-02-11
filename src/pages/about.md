@@ -25,6 +25,7 @@ public class About
     {
       ".NET Core",
       "React",
+      "React Native",
       "Xamarin"
     };
     Editors = new string[]
@@ -44,6 +45,7 @@ Here are a few of the technologies that I like to use:
 - .NET Core
 - JavaScript
 - React
+- React Native
 - Xamarin
 - Azure
 - GitHub
@@ -348,6 +350,21 @@ Here is a timeline of my work history and when I first used different technologi
     <td>January</td>
     <td></td>
     <td>Helm</td>
+  </tr>
+  <tr>
+    <td>December</td>
+    <td></td>
+    <td>CodeMirror</td>
+  </tr>
+  <tr>
+    <th>2021</td>
+    <th></td>
+    <th></td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td></td>
+    <td>React Native</td>
   </tr>
 </table>
 
