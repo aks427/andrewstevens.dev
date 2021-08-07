@@ -3,7 +3,7 @@ title: "About"
 date: "2019-05-28"
 ---
 
-This website is built using Gatsby and React, hosted on [GitHub](https://github.com/aks427/andrewstevens.dev) using GitHub Pages, and built and deployed using [Travis CI](https://travis-ci.org/aks427/andrewstevens.dev).
+This website is built using Gatsby and React, hosted on [GitHub](https://github.com/aks427/andrewstevens.dev) using GitHub Pages, and built and deployed using GitHub Actions.
 
 ```csharp
 public class About
