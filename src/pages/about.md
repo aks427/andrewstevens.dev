@@ -366,5 +366,15 @@ Here is a timeline of my work history and when I first used different technologi
     <td></td>
     <td>React Native</td>
   </tr>
+  <tr>
+    <th>2022</td>
+    <th></td>
+    <th></td>
+  </tr>
+  <tr>
+    <td>June</td>
+    <td></td>
+    <td>MAUI Blazor</td>
+  </tr>
 </table>
 
