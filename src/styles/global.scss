@@ -14,8 +14,6 @@ pre code {
 } */
 
 .social-links {
-  margin-top: 64px;
-
   a {
     margin-right: 12px;
 
@@ -29,5 +27,5 @@ pre code {
   }
 }
 
-@import url("prism.css");
-@import url("timeline.scss");
+@import url('prism.css');
+@import url('timeline.scss');

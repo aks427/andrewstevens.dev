@@ -68,12 +68,12 @@ export default ({ children }) => {
         css={css`
           background-color: #fbfaf3;
           padding-top: 50px;
-          padding-bottom: 50px;
+          padding-bottom: 120px;
           padding-right: clamp(30px, 5vw, 50px);
           padding-left: clamp(30px, 5vw, 50px);
           display: flex;
           justify-content: space-between;
-          align-items: center;
+          align-items: start;
         `}
       >
         <div className="social-links">
