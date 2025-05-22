@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{sweJ:function(t,e,n){"use strict";n.r(e);n("q1tI");var l=n("TJpk"),b=n("Bl7J"),r=n("qKvR");e.default=t=>{let{data:e}=t;const n=e.markdownRemark;return Object(r.b)(b.a,null,Object(r.b)(l.Helmet,null,Object(r.b)("title",null,n.frontmatter.title," | Andrew Stevens")),Object(r.b)("div",null,Object(r.b)("h2",null,n.frontmatter.title),Object(r.b)("div",{dangerouslySetInnerHTML:{__html:n.html}})))}}}]);
+//# sourceMappingURL=component---src-templates-page-js-8a59068417497f2195c5.js.map
