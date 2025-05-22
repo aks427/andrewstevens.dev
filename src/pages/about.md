@@ -1,6 +1,6 @@
 ---
-title: "About"
-date: "2019-05-28"
+title: 'About'
+date: '2019-05-28'
 ---
 
 This website is built using Gatsby and React, hosted on [GitHub](https://github.com/aks427/andrewstevens.dev) using GitHub Pages, and built and deployed using GitHub Actions.
@@ -57,9 +57,9 @@ Here is a timeline of my work history and when I first used different technologi
 
 <table class="timeline">
   <tr>
-    <th>1999</td>
-    <th></td>
-    <th></td>
+    <th>1999</th>
+    <th></th>
+    <th></th>
   </tr>
   <tr>
     <td></td>
@@ -67,9 +67,9 @@ Here is a timeline of my work history and when I first used different technologi
     <td>HTML</td>
   </tr>
   <tr>
-    <th>2001</td>
-    <th></td>
-    <th></td>
+    <th>2001</th>
+    <th></th>
+    <th></th>
   </tr>
   <tr>
     <td></td>
@@ -82,9 +82,9 @@ Here is a timeline of my work history and when I first used different technologi
     <td>Macromedia Dreamweaver, Adobe Photoshop</td>
   </tr>
   <tr>
-    <th>2002</td>
-    <th></td>
-    <th></td>
+    <th>2002</th>
+    <th></th>
+    <th></th>
   </tr>
   <tr>
     <td></td>
@@ -97,9 +97,9 @@ Here is a timeline of my work history and when I first used different technologi
     <td>Macromedia Fireworks</td>
   </tr>
   <tr>
-    <th>2003</td>
-    <th></td>
-    <th></td>
+    <th>2003</th>
+    <th></th>
+    <th></th>
   </tr>
   <tr>
     <td></td>
@@ -112,9 +112,9 @@ Here is a timeline of my work history and when I first used different technologi
     <td>WebWizForums</td>
   </tr>
   <tr>
-    <th>2004</td>
-    <th></td>
-    <th></td>
+    <th>2004</th>
+    <th></th>
+    <th></th>
   </tr>
   <tr>
     <td>August</td>
@@ -127,9 +127,9 @@ Here is a timeline of my work history and when I first used different technologi
     <td>SOOP Portal</td>
   </tr>
   <tr>
-    <th>2005</td>
-    <th></td>
-    <th></td>
+    <th>2005</th>
+    <th></th>
+    <th></th>
   </tr>
   <tr>
     <td></td>
@@ -142,9 +142,9 @@ Here is a timeline of my work history and when I first used different technologi
     <td>Wrote popular Profile Fields and Calendar mods to WebWizForums</td>
   </tr>
   <tr>
-    <th>2006</td>
-    <th></td>
-    <th></td>
+    <th>2006</th>
+    <th></th>
+    <th></th>
   </tr>
   <tr>
     <td></td>
@@ -157,9 +157,9 @@ Here is a timeline of my work history and when I first used different technologi
     <td>Visual Studio, VB.NET</td>
   </tr>
  <tr>
-    <th>2007</td>
-    <th></td>
-    <th></td>
+    <th>2007</th>
+    <th></th>
+    <th></th>
   </tr>
   <tr>
     <td></td>
@@ -167,9 +167,9 @@ Here is a timeline of my work history and when I first used different technologi
     <td>JQuery</td>
   </tr>
   <tr>
-    <th>2008</td>
-    <th></td>
-    <th></td>
+    <th>2008</th>
+    <th></th>
+    <th></th>
   </tr>
   <tr>
     <td>August</td>
@@ -182,9 +182,9 @@ Here is a timeline of my work history and when I first used different technologi
     <td>C#, ASP.NET WebForms, MS SQL, Subversion</td>
   </tr>
   <tr>
-    <th>2009</td>
-    <th></td>
-    <th></td>
+    <th>2009</th>
+    <th></th>
+    <th></th>
   </tr>
   <tr>
     <td></td>
@@ -192,9 +192,9 @@ Here is a timeline of my work history and when I first used different technologi
     <td>ExtJS, RequireJS, ASP.NET Web MVC, NHibernate, TeamCity, Microsoft Azure, Azure Cloud Services, Sql Azure</td>
   </tr>
   <tr>
-    <th>2010</td>
-    <th></td>
-    <th></td>
+    <th>2010</th>
+    <th></th>
+    <th></th>
   </tr>
   <tr>
     <td></td>
@@ -202,9 +202,9 @@ Here is a timeline of my work history and when I first used different technologi
     <td>iOS & Android Apps, Sencha Touch, PhoneGap, Eclipse, Xcode</td>
   </tr>
   <tr>
-    <th>2011</td>
-    <th></td>
-    <th></td>
+    <th>2011</th>
+    <th></th>
+    <th></th>
   </tr>
   <tr>
     <td>September</td>
@@ -217,9 +217,9 @@ Here is a timeline of my work history and when I first used different technologi
     <td>ExtJS, Sencha Touch, NHibernate, SQL Azure</td>
   </tr>
   <tr>
-    <th>2012</td>
-    <th></td>
-    <th></td>
+    <th>2012</th>
+    <th></th>
+    <th></th>
   </tr>
   <tr>
     <td>April</td>
@@ -227,9 +227,9 @@ Here is a timeline of my work history and when I first used different technologi
     <td>Released first version of GoFormz</td>
   </tr>
   <tr>
-    <th>2013</td>
-    <th></td>
-    <th></td>
+    <th>2013</th>
+    <th></th>
+    <th></th>
   </tr>
   <tr>
     <td>April</td>
@@ -237,9 +237,9 @@ Here is a timeline of my work history and when I first used different technologi
     <td>BitBucket, Git</td>
   </tr>
   <tr>
-    <th>2014</td>
-    <th></td>
-    <th></td>
+    <th>2014</th>
+    <th></th>
+    <th></th>
   </tr>
   <tr>
     <td>March</td>
@@ -252,9 +252,9 @@ Here is a timeline of my work history and when I first used different technologi
     <td>Xamarin, iOS</td>
   </tr>
   <tr>
-    <th>2015</td>
-    <th></td>
-    <th></td>
+    <th>2015</th>
+    <th></th>
+    <th></th>
   </tr>
   <tr>
     <td>Spring</td>
@@ -272,9 +272,9 @@ Here is a timeline of my work history and when I first used different technologi
     <td>ES6, ReactJS, Redux, npm, Atom</td>
   </tr>
   <tr>
-    <th>2016</td>
-    <th></td>
-    <th></td>
+    <th>2016</th>
+    <th></th>
+    <th></th>
   </tr>
   <tr>
     <td>Spring</td>
@@ -287,9 +287,9 @@ Here is a timeline of my work history and when I first used different technologi
     <td>Microservices, OAuth2, Event Sourcing</td>
   </tr>
   <tr>
-    <th>2017</td>
-    <th></td>
-    <th></td>
+    <th>2017</th>
+    <th></th>
+    <th></th>
   </tr>
   <tr>
     <td>Spring</td>
@@ -307,9 +307,9 @@ Here is a timeline of my work history and when I first used different technologi
     <td>UWP, <a href="/projects/windows-app">Windows App</a>, Cross Platform Mobile Development</td>
   </tr>
   <tr>
-    <th>2018</td>
-    <th></td>
-    <th></td>
+    <th>2018</th>
+    <th></th>
+    <th></th>
   </tr>
   <tr>
     <td>Summer</td>
@@ -317,9 +317,9 @@ Here is a timeline of my work history and when I first used different technologi
     <td><a href="/projects/extjs-react-migration">Rewrote and migrated ExtJs code to React</a></td>
   </tr>
   <tr>
-    <th>2019</td>
-    <th></td>
-    <th></td>
+    <th>2019</th>
+    <th></th>
+    <th></th>
   </tr>
   <tr>
     <td>March</td>
@@ -342,9 +342,9 @@ Here is a timeline of my work history and when I first used different technologi
     <td>Docker, Kubernetes</td>
   </tr>
   <tr>
-    <th>2020</td>
-    <th></td>
-    <th></td>
+    <th>2020</th>
+    <th></th>
+    <th></th>
   </tr>
   <tr>
     <td>January</td>
@@ -357,9 +357,9 @@ Here is a timeline of my work history and when I first used different technologi
     <td>CodeMirror</td>
   </tr>
   <tr>
-    <th>2021</td>
-    <th></td>
-    <th></td>
+    <th>2021</th>
+    <th></th>
+    <th></th>
   </tr>
   <tr>
     <td>February</td>
@@ -367,14 +367,58 @@ Here is a timeline of my work history and when I first used different technologi
     <td>React Native</td>
   </tr>
   <tr>
-    <th>2022</td>
-    <th></td>
-    <th></td>
+    <th>2022</th>
+    <th></th>
+    <th></th>
   </tr>
   <tr>
     <td>June</td>
     <td></td>
     <td>MAUI Blazor</td>
   </tr>
+  <tr>
+    <th>2023</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>August</td>
+    <td></td>
+    <td>Released MAUI Blazor rewrite of GoFormz mobile app</td>
+  </tr>
+  <tr>
+    <td>September</td>
+    <td></td>
+    <td>Started at Tandem Diabetes Care</td>
+  </tr>
+  <tr>
+    <td>October</td>
+    <td></td>
+    <td>Wrote service that enabled mobile pump updates</td>
+  </tr>
+  <tr>
+    <th>2024</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td></td>
+    <td>Architected data pipeline for processing pump events</td>
+  </tr>
+  <tr>
+    <td>March</td>
+    <td></td>
+    <td>Started Sugarmate React Native rewrite</td>
+  </tr>
+  <tr>
+    <th>2025</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td>May</td>
+    <td></td>
+    <td>Finished Sugarmate React Native rewrite</td>
+  </tr>
 </table>
-
