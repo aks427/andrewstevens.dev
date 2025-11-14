@@ -421,4 +421,9 @@ Here is a timeline of my work history and when I first used different technologi
     <td></td>
     <td>Finished Sugarmate React Native rewrite</td>
   </tr>
+  <tr>
+    <td>July</td>
+    <td></td>
+    <td>Flutter</td>
+  </tr>
 </table>
